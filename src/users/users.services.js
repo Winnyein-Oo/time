@@ -1,5 +1,5 @@
 import prisma from "../prisma.js";
 
 export const getAll = async () => {
-  return prisma.getAll();
+  return prisma.user.findMany();
 };
